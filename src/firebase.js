@@ -1,10 +1,11 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore, collection } from "firebase/firestore"
 
+const apiKey = import.meta.env.VITE_API_KEY
 
 // Notes app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA5cPuHEy5YNTUUeTrBvyTAHvoUD_riFyQ",
+  apiKey,
   authDomain: "notes-app-5087c.firebaseapp.com",
   projectId: "notes-app-5087c",
   storageBucket: "notes-app-5087c.appspot.com",
